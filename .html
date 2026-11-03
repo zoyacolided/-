@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДОСЛІДНИК ПЛАНЕТИ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4f3ec;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 60px;
+    }
+
+    /* Main Title */
+    h1.main-title {
+      font-size: 2.5rem;
+      font-weight: normal;
+      letter-spacing: 2px;
+      color: #000;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Layout Container */
+    .content-container {
+      display: flex;
+      width: 100%;
+      max-width: 1100px;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 50px;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    /* Left Box */
+    .left-box {
+      background-color: #d3dbe3;
+      border-radius: 20px;
+      padding: 35px 30px;
+      flex: 1.2;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .left-box h3 {
+      font-size: 1.25rem;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #000;
+    }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 1.05rem;
+      color: #111;
+      line-height: 1.4;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    /* Right Section */
+    .right-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .goal-box {
+      background-color: #d3dbe3;
+      border-radius: 20px;
+      padding: 25px 30px;
+      text-align: center;
+      width: 100%;
+      font-size: 1.15rem;
+      line-height: 1.4;
+      color: #111;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .image-placeholder {
+      width: 280px;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-placeholder img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    /* Navigation Footer Buttons */
+    .nav-footer {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-btn {
+      display: inline-block;
+      width: 180px;
+      padding: 14px 20px;
+      background-color: #000000;
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Title -->
+  <h1 class="main-title">ДОСЛІДНИК ПЛАНЕТИ</h1>
+
+  <!-- Content Layout -->
+  <div class="content-container">
+    
+    <!-- Left Box: Requirements Checklist -->
+    <div class="left-box">
+      <h3>Виконає бодай 6 наступних точок</h3>
+      <ul class="checklist">
+        <li>☐ Знає про внутрішню будову планети</li>
+        <li style="padding-left: 20px;">☐ Знає про розташування Землі у Сонячній системі, її рух у просторі ітд.</li>
+        <li>☐ Знає, що таке паралелі та меридіани, екватор</li>
+        <li style="padding-left: 20px;">☐ Назве всі континенти і океани</li>
+        <li>☑ Знає, що таке глобальне потепління</li>
+        <li>☑ Знає, що сам може зробити для охорони нашої планети</li>
+      </ul>
+    </div>
+
+    <!-- Right Section: Goal and Image Placeholder -->
+    <div class="right-section">
+      <div class="goal-box">
+        Ціль: Навчити новачтво загальних відомостей про нашу планету
+      </div>
+
+      <!-- INSERT YOUR IMAGE PATH BELOW -->
+      <div class="image-placeholder">
+        <img src="YOUR_IMAGE_PATH_HERE.png" alt="Планета логотип">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Navigation Buttons -->
+  <div class="nav-footer">
+    <!-- INSERT BACK LINK BELOW -->
+    <a href="YOUR_BACK_LINK_HERE.html" class="nav-btn">Назад</a>
+
+    <!-- INSERT NEXT LINK BELOW -->
+    <a href="YOUR_NEXT_LINK_HERE.html" class="nav-btn">Наступний</a>
+  </div>
+
+</body>
+</html> 
