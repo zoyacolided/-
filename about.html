@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ВМІСТОСТІ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      background-color: #f4f3ec;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    h1.main-title {
+      font-size: 2.8rem;
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+      color: #000;
+      text-align: center;
+    }
+
+    /* 3-column layout grid */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px 60px;
+      width: 100%;
+      max-width: 1000px;
+      align-items: start;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .column-title {
+      font-size: 2.2rem;
+      font-weight: normal;
+      letter-spacing: 2px;
+      color: #000;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    /* Black pill button styling */
+    .btn {
+      display: inline-block;
+      width: 260px;
+      padding: 18px 20px;
+      background-color: #000000;
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-align: center;
+      border-radius: 40px;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Heading -->
+  <h1 class="main-title">ВМІСТОСТІ</h1>
+
+  <!-- Three Columns Layout -->
+  <div class="content-grid">
+
+    <!-- Left Column: ГУРТОК -->
+    <div class="column">
+      <h2 class="column-title">ГУРТОК</h2>
+     
+      <a href="Всіgirls.html" class="btn">Всі</a>
+    </div>
+
+    <!-- Center Column: Middle Buttons -->
+    <div class="column">
+      <!-- Empty spacing to align buttons with adjacent columns -->
+      <div style="height: 48px;"></div>
+      
+      
+      <a href="Дослідник.html" class="btn">Дослідник Планети</a>
+      
+      
+      <a href="Пасічник.html" class="btn">Пасічник</a>
+      
+      
+      <a href="Художник.html" class="btn">Художник</a>
+    </div>
+
+    <!-- Right Column: ФОТОГРАФІЇ -->
+    <div class="column">
+      <h2 class="column-title">ФОТОГРАФІЇ</h2>
+      
+      <a href="https://photos.app.goo.gl/B7xZpxARMyiTaKQ28" class="btn">26-27</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
