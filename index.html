@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дельфіни</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Split background container */
+    .background-container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .bg-half {
+      flex: 1;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Left background image - INSERT YOUR LEFT IMAGE PATH BELOW */
+    .bg-left {
+      background-image: url('https://codehs.com/uploads/d97177dd88277cddd9f96f0996297ab7');
+    }
+
+    /* Right background image - INSERT YOUR RIGHT IMAGE PATH BELOW */
+    .bg-right {
+      background-image: url('https://codehs.com/uploads/51f5c2d2c1d24e7e1c0571ca1859efbc');
+    }
+
+    /* Content overlay centered on screen */
+    .content-overlay {
+      position: relative;
+      z-index: 2;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      font-weight: 300;
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    }
+
+    .title {
+      font-size: 3.5rem;
+      font-weight: 400;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      line-height: 1.3;
+      margin-bottom: 40px;
+      max-width: 900px;
+      text-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Button styling */
+    .next-btn {
+      display: inline-block;
+      background-color: #f4f3ef;
+      color: #111111;
+      padding: 14px 45px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .next-btn:hover {
+      background-color: #ffffff;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background section for two images side by side -->
+  <div class="background-container">
+    <!-- Replace 'YOUR_LEFT_IMAGE_URL_HERE.jpg' inside CSS above with left image link -->
+    <div class="bg-half bg-left"></div>
+    <!-- Replace 'YOUR_RIGHT_IMAGE_URL_HERE.jpg' inside CSS above with right image link -->
+    <div class="bg-half bg-right"></div>
+  </div>
+
+  <!-- Text and Button Overlay -->
+  <div class="content-overlay">
+    <p class="subtitle">ДЕЛЬФІНИ</p>
+    <h1 class="title">ВМІСТОСТІ НА ЦЬОГО РОКУ</h1>
+    
+    <!-- INSERT YOUR NEXT PAGE LINK IN href="" BELOW -->
+    <a href="about.html" class="next-btn">Далі</a>
+  </div>
+
+</body>
+</html>
